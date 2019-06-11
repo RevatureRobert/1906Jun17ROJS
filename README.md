@@ -1,1 +1,2 @@
 # 1906Jun17ROJS
+#### This is where you will find all the content from the 2 week Online program.  Here is where we will keep our files like HTML, CSS and JS.  If you ever need to look back at content and examples, feel free to explore.  Git is a version control system, but you will learn more about that in the normal bootcamp.
