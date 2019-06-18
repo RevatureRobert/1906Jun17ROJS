@@ -30,3 +30,30 @@ p{
 #myId{
     color:saddlebrown;
 }
+.myDiv{
+    background-color: skyblue;
+}
+#row1{
+    border-color: blueviolet;
+}
+#row2,#row3{
+    border-color: brown;
+}
+table{
+    border-color: darkcyan;
+    padding: 100px;
+    margin: 75px;
+    border-width: 50px;
+    border-style: ridge;
+}
+/* this is a nested selector
+
+this way, we can select certain elements only if they have a specific 
+parent element
+
+this will also be referred to as child selectors
+ */
+
+ol > li{
+    color:darkred;
+}
