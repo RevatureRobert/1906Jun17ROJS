@@ -32,12 +32,26 @@ Inside the comments-->
             Data about data-->
     <meta charset="ISO-8859-1" />
     <title>Our first and possibly the most awesomist website ever</title>
+      <!-- internal styling
+       
+       <style>
+         p{color:red;}
+       </style>-->
+
+       <!-- this is called external styling:
+       -->
+       <link rel="stylesheet" type="text/css" href="../css/myStyles.css"
   </head>
 
   <body>
     <!-- the style inside the p tag is known as an attribute
      -->
-    <p style="color:blue">We can write paragraphs</p>
+
+<!-- this is an example of inline styling || 
+                                          \/    
+inline styling is not modular-->
+
+    <p class="myPar">We can write paragraphs</p>
     <h1 style="color: rgb(122,122,122)">This is a header</h1>
     <h2 style="color: #FF00FF">Another header</h2>
     <h3>Yet Another</h3>
@@ -48,6 +62,8 @@ Inside the comments-->
     <div>
       <h6>THIS is the last one hahaahahaha</h6>
     </div>
+
+<p class="myPar" id="myId">this is another p</p>
     <!-- What is an IDE?
         Integrated Development Environment -->
     <!-- a line break in html is <br> -->
@@ -60,6 +76,8 @@ Inside the comments-->
                 pair that is used to control the elements
                 behavior
         -->
+
+
     <table border="5">
       <tr>
         <th>Header1</th>
@@ -74,7 +92,7 @@ Inside the comments-->
         <td>Row2, Column1</td>
         <td>Row2, Column2</td>
       </tr>
-
+    </table>
       <ol>
           This is an ordered list
         <li>as with any list, we have list items</li>
@@ -87,6 +105,8 @@ Inside the comments-->
         <li>since these items are in an unordered list,</li>
         <li>they are bulleted</li>
       </ul>
+
+
       <!-- another ide favorite
         ctrl + shift + 'F' -->
 
@@ -124,9 +144,7 @@ Inside the comments-->
             >Curabitur viverra sagittis nisl. Maecenas ac magna turpis.
             Pellentesque aliquam nisi nec pellentesque viverra. Maecenas ac mi
             nec ipsum imperdiet fr</span
-          >ingilla at vitae ante. Phasellus ac iaculis orci, ac hendrerit odio.
-          Nulla tristique ac erat blandit faucibus. Curabitur rutrum dui eu
-          justo mattis auctor. Praesent luctus dui a porttitor dignissim. Nulla
+          >Praesent luctus dui a porttitor dignissim. Nulla
           facilisi. Mauris fringilla quam ut justo lobortis, at imperdiet eros
           ultricies.
         </p>
@@ -137,27 +155,7 @@ Inside the comments-->
                 in posuere sem. Curabitur viverra 
                 sagittis nisl. Maecenas ac magna turpis. Pellentesque 
                 aliquam nisi nec pellentesque viverra. Maecenas ac mi 
-                nec ipsum imperdiet fringilla at vitae ante. 
-                Phasellus ac iaculis orci, ac hendrerit odio. 
-                Nulla tristique ac erat blandit faucibus. 
-                Curabitur rutrum dui eu justo mattis auctor. Praesent 
-                luctus dui a porttitor dignissim. Nulla facilisi. 
-                Mauris fringilla quam ut justo lobortis, at imperdiet 
-                eros ultricies.
-
-                Donec nec dictum purus. Nullam nisi mi, efficitur 
-                ut ante quis, dignissim auctor velit. Suspendisse 
-                at ligula id sapien semper fringilla sollicitudin 
-                quis nunc. Proin volutpat ex ac arcu finibus, et 
-                sollicitudin odio sagittis. Fusce accumsan turpis 
-                sem, ornare porttitor tellus fermentum ac. Maecenas 
-                imperdiet dui vel pellentesque cursus. Praesent viverra
-                 fermentum lectus, posuere sagittis enim tristique 
-                 sit amet. Donec nulla mauris, aliquet ac efficitur
-                  id, porta eu enim. Fusce convallis ex sodales 
-                  nibh elementum aliquet. Aenean accumsan lacinia 
-                  felis non dictum. Mauris porta lectus nec leo rutrum 
-                  sollicitudin sed eget est.
+               
         </textarea
       >
       <input
@@ -174,9 +172,15 @@ Inside the comments-->
         src= "https://www.lipsum.com/feed/html "
       ></iframe>
       <!-- the image tag, like many others, are self closing tags -->
-    </table>
+    
+    <video width="320" height="240" control>
+      <source src="C:\Users\Revature\Downloads\SampleVideo_720x480_10mb.mp4" type="video/mp4">
+    </video>
   </body>
 </html>
+
+
+
 <!-- ./another.html
   ../html/another.html
 this is the relative path to our file 

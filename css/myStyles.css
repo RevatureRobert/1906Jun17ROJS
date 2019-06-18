@@ -1,0 +1,32 @@
+/* CSS
+Stands for Cascading Style Sheet
+Will go from least to most specific when determining style for
+    each particular element.
+If an element has a specific id attached to it, it has higher priority
+    than the tag name
+
+    CSS syntax:
+        [selector][curly brace][key-value pair][semicolon][end curly brace]
+
+When we want to grab elements by the tag name:
+    p{},h1{},h2{},li{},...etc.
+
+When we select by class name
+    Use the '.'
+    .classname{}
+
+When we select by id:
+    #idname
+*/
+
+
+/* we can select elements by tag name */
+p{
+    color:red;
+}
+.myPar{
+    color:blue;
+}
+#myId{
+    color:saddlebrown;
+}
