@@ -1,0 +1,49 @@
+#nav-list {
+  list-style-type: none;
+  /* text-align: center; */
+  /* list-style: none;*/
+  /* display: inline-block;  */
+  /*display: inline;*/
+
+  /* float: left; */
+  /* text-align: center; */
+}
+#logo {
+  margin: auto;
+  text-align: center;
+  display: block;
+}
+/* this will make the list items display inline
+but basically I am trying to tell the next developer 
+that when he comes over to code, what he needs
+to know.
+If I don't he will probably delete all of my
+terrible code and replace it with his terrible code */
+li {
+  display: inline;
+  /* text-align: center; */
+}
+/* .mainNav{
+    margin:0;
+    padding:0;
+} */
+#thisDiv {
+  align-content: center;
+  float: none;
+}
+#jumbo {
+  align-content: center;
+  width: 100%;
+}
+#commentSection {
+  background-color: aqua;
+}
+#coreComments {
+  /* width:100%; */
+
+  background-color: white;
+}
+#row1,
+#row2 {
+  align-content: center;
+}
