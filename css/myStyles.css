@@ -24,6 +24,9 @@ When we select by id:
 p{
     color:red;
 }
+#h1{
+    color:blue;
+}
 .myPar{
     color:blue;
 }
@@ -54,6 +57,6 @@ parent element
 this will also be referred to as child selectors
  */
 
-ol > li{
+ol>li{
     color:darkred;
 }
