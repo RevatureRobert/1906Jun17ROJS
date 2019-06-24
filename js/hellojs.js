@@ -278,14 +278,14 @@ function newFunc() {
 
 //welcome to closure
 
-// let driveCar =(function (){
-//     let miles=0;
-//     console.log('We have purchased the car')
-//     return function(){
-//         console.log('we are driving the car')
-//         return ++miles;
-//     }
-// })();
+let driveCar =(function (){
+    let miles=0;
+    console.log('We have purchased the car')
+    return function(){
+        console.log('we are driving the car')
+        return ++miles;
+    }
+})();
 
 let newArr = [];
 let kangaroo = [5, 10, 16, 19, 3];
