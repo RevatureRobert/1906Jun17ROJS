@@ -1,9 +1,15 @@
-//when page loads all html elements
-window.onload= function(){
-    console.log('window has loaded')
-    document.getElementById("swSubmit")
-    .addEventListener("click",getSW);
-}
+// when page loads all html elements
+
+//  if you put the script in the head without defer
+// window.onload= function(){
+//     console.log('window has loaded')
+// }
+
+//if you add defer into the script tag in the html
+//  or you put the script tag at the bottom of the
+//  body or below the body tag
+document.getElementById("swSubmit")
+.addEventListener("click",getSW);
 
 
 function getSW(){
@@ -75,7 +81,6 @@ function setValues(chickens){
     getFilms(chickens.films[0]);
 }
 
-
 function getFilms(url){
     console.log('it works')
     //getting the field value
@@ -142,4 +147,21 @@ function getFilms(url){
 }
 function setField(chickens){
     document.getElementById('movie').innerHTML=chickens.title
+}
+
+function money(){
+    let a ="Dollar";
+    let b="Euro";
+    return a;
+    return b;
+}
+
+function money(x){
+    let a ="Dollar";
+    let b="Euro";
+    if(x){
+        return a;
+    }else{
+        return b;
+    }
 }

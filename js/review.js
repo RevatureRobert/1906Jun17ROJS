@@ -88,7 +88,7 @@ let car={
     color:'red',
     make:'dodge'
 };
-function checkCar(){
+function checkCar(parameter){
     if(car.color=='red'&&car.make!='ford'){
         return 'red';   
     }else if(car.color=='green'||car.make=='dodge'){
@@ -101,3 +101,97 @@ function checkCar(){
         return car.color;
     }
 }
+//the 5 is the argument
+checkCar(5);
+
+for(let x=0; x<10;x++){
+    console.log(x);
+    break;
+}
+for(let x=0;x<10;x++){
+    if(x%3==0){
+        console.log('divisible by 3');
+        continue;
+    }else if(x%3==1){
+        console.log('we have a number that is not');
+    }else{
+        console.log('222222222');
+    }
+    if(x==8){
+        console.log('been nice knowing you');
+        break;
+    }console.log('were still going');
+}
+
+for(let x =3; x>=0; x--){
+    console.log('x is: '+x);
+    for(let y=4; y>=x; y--){
+        console.log('y is: '+y);
+        if(y%x==0)
+        break;
+    }
+}
+
+//these are called labels
+
+//we can name our loops and break and continue
+//them
+
+jose: for(let x =3; x>=0; x--){
+    console.log('x is: '+x);
+    jalepeno: for(let y=4; y>=x; y--){
+        console.log('y is: '+y);
+        if(y%x==0)
+        break jose;
+    }
+}
+
+jose: for(let x =3; x>=0; x--){
+    console.log('x is: '+x);
+    jalepeno: for(let y=4; y>=x; y--){
+        console.log('y is: '+y);
+        if(y%x==0)
+        break jalepeno;
+    }
+}
+
+jose: for(let x =3; x>=0; x--){
+    console.log('x is: '+x);
+    jalepeno: for(let y=4; y>=x; y--){
+        console.log('y is: '+y);
+        if(y%x==0)
+        continue jose;
+    }
+}
+
+
+// default values
+""||"hero card"
+//returns "hero card"
+"father time"||"hero card"
+//returns "father time"
+//returns the first truthy value, or whatever stops the operation
+
+//guard operator
+""&&"hero card"
+//returns ""
+"father time"&&"hero card"
+//returns "hero card"
+//returns the first falsey value, or whatever stops the operation
+
+//varargs
+//variable amount of arguments
+//but javascript doesnt care
+function argues(...c){
+    return arguments[5];
+}
+function argues(a,b,...c){
+    return arguments.length;
+}
+function goLong(a,b,c){
+    return a+","+b+","+c;
+}
+goLong(1,2,3);
+goLong(1);
+goLong(1,2,3,4,5,6,7);
+

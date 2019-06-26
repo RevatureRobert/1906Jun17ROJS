@@ -19,35 +19,35 @@ When we select by id:
     #idname
 */
 
-
 /* we can select elements by tag name */
-p{
-    color:red;
+p {
+  color: red;
 }
-#h1{
-    color:blue;
+#h1 {
+  color: blue;
 }
-.myPar{
-    color:blue;
+.myPar {
+  color: blue;
 }
-#myId{
-    color:saddlebrown;
+#myId {
+  color: saddlebrown;
 }
-.myDiv{
-    background-color: skyblue;
+.myDiv {
+  background-color: skyblue;
 }
-#row1{
-    border-color: blueviolet;
+#row1 {
+  border-color: blueviolet;
 }
-#row2,#row3{
-    border-color: brown;
+#row2,
+#row3 {
+  border-color: brown;
 }
-table{
-    border-color: darkcyan;
-    padding: 100px;
-    margin: 75px;
-    border-width: 50px;
-    border-style: ridge;
+table {
+  border-color: darkcyan;
+  padding: 100px;
+  margin: 75px;
+  border-width: 50px;
+  border-style: ridge;
 }
 /* this is a nested selector
 
@@ -57,6 +57,9 @@ parent element
 this will also be referred to as child selectors
  */
 
-ol>li{
-    color:darkred;
+ol > li {
+  color: darkred;
+}
+body {
+    background-image: url('http://svite-league-apps-content.s3.amazonaws.com/bgimages/sports-wave.jpg');
 }
