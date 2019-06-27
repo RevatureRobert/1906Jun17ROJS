@@ -195,3 +195,20 @@ goLong(1,2,3);
 goLong(1);
 goLong(1,2,3,4,5,6,7);
 
+//operators
+//unary, binary, and ternary
+//unary
+// ++x
+//because a unary works with one operand
+
+//binary
+// x+y
+//because binary works with two operands
+
+//ternary
+// (x<y)?x:y;
+//because ternary works with three operands
+//[condition]?[true]:[false]
+//ternary operators:
+//      '?',':'
+// x+y/2+3 + --x + ((x)?true:false)

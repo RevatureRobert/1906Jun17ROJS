@@ -196,3 +196,12 @@ let Var2 //works
 // let 1var //does not work
 let _var //works
 let Var //works
+
+
+let pigs=document.getElementById('pigs')
+pigs.innerHTML='pigs';
+pigs.style.textAlign='center';
+pigs.style.border='solid';
+pigs.style.margin='100px';
+pigs.className='col-sm-2';
+pigs.style.float='center';
