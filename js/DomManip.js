@@ -167,7 +167,7 @@ var myEventHandler = function(event){
  *      https://javascript.info/bubbling-and-capturing
  */
 var divs = document.getElementsByTagName('div');
-
+// console.log(divs);
 for(let i=0; i<divs.length;i++){
     divs[i].addEventListener('click',myEventHandler);
     divs[i].style.color='white'
@@ -205,3 +205,32 @@ pigs.style.border='solid';
 pigs.style.margin='100px';
 pigs.className='col-sm-2';
 pigs.style.float='center';
+
+
+
+let arr=[9,2,4,3,1,8,6,9,10];
+
+function bubblesort(inputArray){
+  let len = inputArray.length;
+  for(let i=0; i<len; i++){
+    for(let j=0; j<len; j++){
+      if(inputArray[j]>inputArray[j+1]){
+        let temp = inputArray[j];
+        inputArray[j]=inputArray[j+1];
+        inputArray[j+1]=temp;
+      }
+    }
+  }
+return inputArray;
+}
+
+/**
+Selection Sort	Ω(n^2)	     θ(n^2)	      O(n^2)
+Bubble Sort	    Ω(n)	       θ(n^2)     	O(n^2)
+Insertion Sort	Ω(n)	       θ(n^2)	      O(n^2)
+Heap Sort	      Ω(n log(n))	 θ(n log(n))	O(n log(n))
+Quick Sort	    Ω(n log(n))	 θ(n log(n))	O(n^2)
+Merge Sort	    Ω(n log(n))	 θ(n log(n))	O(n log(n))
+Bucket Sort	    Ω(n+k)	     θ(n+k)	      O(n^2)
+Radix Sort	    Ω(nk)	       θ(nk)	      O(nk)
+ */

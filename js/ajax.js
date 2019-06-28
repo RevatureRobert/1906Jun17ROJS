@@ -28,7 +28,7 @@ function getSW(){
     //STEP 2
     xhttp.onreadystatechange = function(){
         console.log("the ready state is changing")
-        if(xhttp.readyState==4&&xhttp.status==200){
+        if(xhttp.readyState==4 && xhttp.status==200){
             console.log("its ready!!!~")
             //You have a status code and a ready state
             /*
@@ -57,7 +57,10 @@ function getSW(){
 
             //this is called marshalling and unmarshalling
             //also parse and stringify
+
             let sw=JSON.parse(xhttp.responseText);
+
+
             console.log(xhttp.responseText);
             console.log(sw);
             console.log(sw.name)
@@ -70,7 +73,7 @@ function getSW(){
     open(http method, url)
     xhttp.open(method, url, asynch)
     */
-   xhttp.open("GET", 'https://swapi.co/api/people/'+swId)
+   xhttp.open("GET", 'https://swapi.co/api/people/'+swId,true)
 
    //STEP 4
    //this sends the request process to retrieve information
@@ -165,3 +168,10 @@ function money(x){
         return b;
     }
 }
+
+
+function getElement(id,msg){
+    return document.getElementById(id).innerHTML=msg;
+}
+
+getElement('three','hello its meee');
